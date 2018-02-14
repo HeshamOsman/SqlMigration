@@ -1,0 +1,16 @@
+######################
+# Project Specific
+######################
+/target/www/**
+
+
+# PDT-specific
+.buildpath
+
+######################
+# Maven
+######################
+log/
+target/
+
+

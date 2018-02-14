@@ -25,7 +25,7 @@ public class PrimarySource {
 	public static final int MEDICAL_REP_AFTER_CELL_NUMBER = 4;
 	
 	
-	public static final int ADMINSTRATOR_WORKSPACE_MODULE_USER_ID = 8;
+	public static final int ADMINSTRATOR_WORKSPACE_MODULE_USER_ID = 25;
 	public static final int QUALIFICATION_ID = 1;
 	public static final int COUNTRY_ID = 61;
 	public static final String STATUS = "active";
@@ -93,7 +93,7 @@ public static void readXLSXFile() throws IOException {
 			}
 			String freps=null;
 			if(reps.length()>1) {
-				 reps += "migration@migration.com,";
+//				 reps += "migration@migration.com,";
 				 freps=  reps.substring(0, reps.length()-1);
 			}
 			printWriter.printf("INSERT INTO tbl_pv_primary_source (`reporter_givename`,`reporter_familyname`,`specialization`,`reporter_city`,`qualification_id`,`workspace_module_user_id`,`reporter_country_id`,`status`,`temporary_assigned_users_emails`)\n" + 
